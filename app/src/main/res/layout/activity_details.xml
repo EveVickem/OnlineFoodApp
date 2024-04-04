@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/detailImage"
+        android:src="@drawable/fried_chicken_leg"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold"
+        android:text="$50"
+        android:id="@+id/price"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginStart="12dp"
+        android:orientation="horizontal">
+
+
+    <com.google.android.material.textview.MaterialTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginEnd="60dp"
+        android:textStyle="bold"
+    android:text="Fried Chicken Leg"
+    android:id="@+id/foodName"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_add"
+        android:id="@+id/add"
+            style="@style/Widget.Material3.Button.IconButton.Outlined" />
+
+       <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:textSize="20sp"
+           android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="1"
+        android:id="@+id/quantity"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_minus"
+            android:id="@+id/minus"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"/>
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Delicious and mouth watery fried chicken legs flavour, with additional chips with some food masala"
+        android:id="@+id/description"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Cart"
+            android:id="@+id/addToCart"
+            android:layout_margin="70dp"
+            android:layout_gravity="center"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -23,16 +23,28 @@
         android:elevation="4dp"
         android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:title="User Dashboard" />
+        android:title="User Dashboard">
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:icon="@drawable/ic_cart"
+           android:backgroundTint="@color/white"
             android:layout_gravity="end"
             android:id="@+id/addToCart"
             style="@style/Widget.Material3.Button.IconButton.Outlined" />
 
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_user"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="start"
+            android:id="@+id/btn_users"
+            style="@style/Widget.Material3.Button.IconButton.Outlined" />
+
+
+</com.google.android.material.appbar.MaterialToolbar>
     <!-- Welcome Message -->
     <TextView
         android:id="@+id/tv_welcome"

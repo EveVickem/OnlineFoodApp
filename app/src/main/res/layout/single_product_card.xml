@@ -48,6 +48,13 @@
             android:layout_marginBottom="4dp"
             android:layout_height="wrap_content"
             android:text="Kshs. 90"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remove"
+            app:icon="@drawable/ic_highlight_off"
+            style="@style/Widget.Material3.Button.IconButton.Filled"/>
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

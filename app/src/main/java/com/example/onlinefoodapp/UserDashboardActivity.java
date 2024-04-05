@@ -52,14 +52,21 @@ public class UserDashboardActivity extends AppCompatActivity {
 
         MaterialButton cartButton = findViewById(R.id.addToCart);
 
-        cartButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start the new activity
-                Intent intent = new Intent(UserDashboardActivity.this, CartActivity.class);
-                startActivity(intent);
-            }
+        cartButton.setOnClickListener(v -> {
+            // Start the new activity
+            Intent intent = new Intent(UserDashboardActivity.this, CartActivity.class);
+            startActivity(intent);
         });
+
+        MaterialButton ic_user = findViewById(R.id.btn_users);
+
+        ic_user.setOnClickListener(v -> {
+            // Start the new activity
+            Intent intent = new Intent(UserDashboardActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
 
         // Initialize item list and adapter
         itemList = new ArrayList<>();

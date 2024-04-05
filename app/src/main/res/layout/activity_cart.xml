@@ -147,7 +147,7 @@
                 android:layout_gravity="center_horizontal"
                 android:text="Check Button" />
 
-    <com.google.android.material.textview.MaterialTextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/backToMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -112,7 +112,6 @@ public class AddItemActivity extends AppCompatActivity {
                         uriTask.addOnCompleteListener(task -> {
                             if (task.isSuccessful()) {
                                 Uri getImageUrl = task.getResult();
-                                Toast.makeText(this, "Desc: "+description, Toast.LENGTH_SHORT).show();
                                 ItemModel product = new ItemModel(uniqueId, productName, productPrice, selectedCategory,description, getImageUrl.toString(), new Constants().getDate());
 
                                 databaseReference.child("products").child(uniqueId)
